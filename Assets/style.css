@@ -1,0 +1,435 @@
+
+
+body
+{
+font-family: "DmSans-Bold", sans-serif;
+font-weight:300
+}
+
+:root
+{
+--section-background: #efefef;
+--white-color: #fff;
+--grey-color: grey;
+--black-color: #000;
+--box-shadow: rgba(0, 0, 0, 0.1);
+--footer-text: #e9e9e9;
+--hover-color: yellow;
+}
+
+p{
+  font-family: Questrial-Regular;
+}
+
+.sidebar {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+ left: 0;
+  background-color: var(--section-background);
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+u
+{
+  background-color: var(--section-background);
+  
+  font-family: "DmSans-Bold";
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--black-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #DCAD67;
+  border: 3px solid grey;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 12px;
+  height: 50px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s; 
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px)
+ {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+ }
+
+header
+{
+height: 80vh;
+background-image: url(./Images/background-home-desktop.jpg);
+background-size: cover;
+height: 600px;
+}
+
+.navbar-toggler
+{
+  background-color: var(--white-color);
+}
+
+.pro 
+{
+ height: 70vh;
+}
+
+.pros 
+{
+ height: 60vh;
+}
+
+.linker
+{
+ color: var(--white-color) !important;
+ margin: 5px;
+}
+
+.linker:hover
+{
+border: 2px solid var(--hover-color);
+}
+
+.linker.active
+{
+border: 2px solid var(--white-color);                                                                                            
+}
+
+
+.header .texts h1
+{
+ font-size: 80px;
+ width: 100%;
+ color: var(--white-color);
+ font-weight: bold;
+}
+
+.header .texts h3
+{
+  color: var(--white-color);
+}
+
+.texts
+{
+ width: 70%;
+ margin: auto;
+}
+
+.texts button
+{
+ font-weight: bold;
+ cursor: pointer;
+ background-color: var(--black-color);
+}
+
+.texts button:hover
+{
+ border: 3px solid var(--black-color);
+ background-color: var(--white-color) !important;
+ color: var(--black-color);
+}
+
+.card
+{
+ background-color: var(--white-color);
+ color: var(--black-color);
+ border: none;
+}
+
+.cards
+{
+ background-color: var(--white-color);
+ color: var(--black-color);
+ border: 1px solid var(--grey-color);
+ box-shadow: 2px 2px var(--box-shadow);
+}
+
+.card-header
+{
+  background-color: var(--white-color);
+}
+
+.section
+{
+ background-color: var(--section-background);
+}
+
+.about
+{
+background-color: var(--white-color);
+width: 90%;
+margin: auto;
+}
+
+.abt 
+{
+  width: 80%;
+  background-color: var(--white-color);
+}
+
+.image 
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 990px)
+{
+    .image
+    {
+      display: none;
+    }
+
+    .colm
+    {
+      display: none;
+    }
+    .card-header
+    {
+      text-align: center;
+    }
+    .texts h1
+    {
+      font-size: 40px !important;
+    }
+    .header
+    {
+      width: 100%;
+      height: auto;
+    }
+    .projects .row .col-md-4 .card
+{
+ width: 200px !important;
+}
+
+.projects .row .col-md-4 .card .card-image img
+{
+ width: 100%;
+ padding: 5px;
+}
+
+.projects .row .col-lg-3 .card
+{
+ width: 200px !important;
+}
+
+.projects .row .col-lg-3 .card .card-image img
+{
+ width: 100%;
+ padding: 5px;
+}
+
+.extra
+{
+  display: none !important;
+}
+
+.extra-row
+{
+  display: flex;
+}
+
+.card-body
+{
+  width: 100%;
+}
+
+}
+
+@media screen and (min-width: 990px)
+{
+    .image
+    {
+      display: block;
+    }
+    .extra-row
+    {
+      display: none !important;
+    }
+}
+
+
+.about p
+{
+font-size: 16px;
+color: var(--black-color);
+}
+
+.caller
+{
+background-color: var(--white-color);
+}
+.call
+{
+border: 1px solid var(--grey-color);
+ background-color: var(--section-background);
+ width: 85vw;
+color: var(--black-color);
+justify-content: space-around;
+margin: auto;
+border-radius: 20px;
+flex-wrap: wrap;
+text-align: center;
+}
+
+.call h1
+{
+ font-size: 45px;
+ font-weight: bold;
+}
+
+.call button
+{
+ color: var(--white-color);
+ font-weight: bold;
+ background-color: var(--black-color);
+}
+
+.call button:hover
+{
+  color: var(--black-color);
+  border: 3px solid var(--black-color);   
+  background-color: var(--grey-color);  
+}
+
+.view:hover
+{
+color: var(--black-color);
+border: 3px solid var(--black-color);   
+background-color: var(--grey-color);                                                                                                                                                                               
+}
+
+.view
+{
+  font-weight: bold;
+ color: var(--white-color);
+ background-color: var(--black-color);
+}
+
+
+footer
+{
+ text-align: center;
+ height: 80px;
+ color: var(--footer-text);
+ background-color: var(--black-color);
+ padding-top: 30px;
+}
+
+.img
+{
+width: 100%;
+height: 100%;
+}
+
+.projects .row .col-md-4 .card
+{
+ width: 250px;
+}
+
+.projects .row .col-md-4 .card .card-image img
+{
+ width: 100%;
+ padding: 5px;
+}
+
+.projects .row .col-lg-3 .card
+{
+ width: 250px;
+}
+
+.projects .row .col-lg-3 .card .card-image img
+{
+ width: 100%;
+ padding: 5px;
+}
+
+.contact-box
+{
+  width: 280px;
+  height: auto;
+  border: 2px solid var(--black-color);
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--section-background) !important;
+}
+
+.modal
+{
+  left: 0 !important;
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+a
+{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.bodee
+{
+  width: 85%;
+  height: 80%;
+  margin: auto;
+}
+
+
+
+.voice
+{
+  height: 20%;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid var(--black-color);
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.icon 
+{
+  width: 30px;
+  height: 30px;
+}
+
+.foot
+{
+  text-align: center;
+}
+
+
